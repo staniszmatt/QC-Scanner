@@ -19,7 +19,17 @@ function runWhenLoaded() {
       }
       console.log("Initialization finished. Ready to start");
       Quagga.start();
+
+      // Quagga.onProcessed(processedCallBack)
+      Quagga.onDetected(processedCallBack);
   });
+ }
+
+
+ function processedCallBack(returnData){
+   console.log("Process Data ", returnData);
+  //  var returnDetect = detect(returnData);
+  //  console.log(returnDetect);
  }
 
  
