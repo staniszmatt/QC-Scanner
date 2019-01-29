@@ -10,7 +10,7 @@ function runWhenLoaded() {
       target: document.querySelector('.picture-window')    // Or '#yourElement' (optional)
     },
     decoder : {
-      readers : ["code_128_reader"]
+      readers : ["upc_reader"]
     }
   }, function(err) {
       if (err) {
@@ -31,5 +31,5 @@ function runWhenLoaded() {
   //  var returnDetect = detect(returnData);
   //  console.log(returnDetect);
  }
-
+//670541597682
  
